@@ -1,1 +1,1 @@
-# HackTheTeachers_ComputerScienceFair
+# HackTheTeachers | Hosted on nricoz.github.io
