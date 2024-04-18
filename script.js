@@ -1,4 +1,4 @@
-image = document.getElementById('myImg2')
+pic = document.getElementById('myImg2')
       
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
@@ -6,7 +6,7 @@ Promise.all([
 ]).then(start)
 function start() {
   const image = await faceapi.bufferToImage("/IMG_0245.jpeg")
-  const detections = await faceapi.detectAllFaces("/IMG_0245.jpeg").withFaceLandmarks().withFaceDescriptors()
+  const detections = await faceapi.detectAllFaces(image).withFaceLandmarks().withFaceDescriptors()
   document.body.append(detections.length)
 }
 
