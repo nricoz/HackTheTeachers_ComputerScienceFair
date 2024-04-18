@@ -5,8 +5,8 @@ Promise.all([
   faceapi.nets.ssdMobilenetv1.loadFromUri('/models')
 ]).then(start)
 function start() {
-  const image = await faceapi.bufferToImage(image)
-  const detections = await faceapi.detectAllFaces(image).withFaceLandmarks().withFaceDescriptors()
+  const image = await faceapi.bufferToImage("/IMG_0245.jpeg")
+  const detections = await faceapi.detectAllFaces("/IMG_0245.jpeg").withFaceLandmarks().withFaceDescriptors()
   document.body.append(detections.length)
 }
 
