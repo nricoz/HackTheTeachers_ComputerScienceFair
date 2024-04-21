@@ -3,9 +3,24 @@
     <head>
         <script defer src="face-api.min.js"></script>
         <script defer src="script.js"></script>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                width:100vw;
+                height:100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column
+            }
+
+            canvas{
+                position:absolute;
+            }
+        </style>
     </head>
     <body>
-        <img id="myImg1" src="/IMG_0242.webp" width="0"/>
-        <img id="myImg2" src="/IMG_0245.jpeg" width="0"/>
+        <input type="file" id="imageUpload"/>
     </body>
 </html>
